@@ -22,7 +22,7 @@ Console.WriteLine($"Last number: {current}");
 
 */
 
-// Chaalenge - Battle Game
+// Challenge - Battle Game
 
 int heroHealth = 10;
 int monsterHealth = 10;
@@ -44,3 +44,24 @@ if (heroHealth <= 0)
     Console.WriteLine("Monster Wins!!");
 else
     Console.WriteLine("Hero Wins!!");
+
+// Challenge - Code 1 - Write code that validates integer input
+
+string? readResult;
+int choosenNumber;
+bool validNumber = false;
+bool validChoice = false;
+do
+{
+    Console.WriteLine("Please, insert a number beetween 5 and 10: ");
+    readResult = Console.ReadLine();
+    validNumber = int.TryParse(readResult, out choosenNumber);
+    if (choosenNumber >= 5 && choosenNumber <= 10)
+    {
+        validChoice = true;
+        continue;
+    }
+    else
+        Console.WriteLine("Choose a number beetween 5 and 10");
+} while (validChoice == false);
+Console.WriteLine($"Your input: {choosenNumber} was accepted!");
