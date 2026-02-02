@@ -1,4 +1,6 @@
-﻿int employeeLevel = 100;
+﻿/*
+
+int employeeLevel = 100;
 string employeeName = "John Smith";
 
 string title = "";
@@ -82,3 +84,4 @@ switch(product[2])
 
 Console.WriteLine($"Product: {size} {color} {type}");
 
+*/
