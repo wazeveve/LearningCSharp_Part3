@@ -1,4 +1,5 @@
-﻿// Coin Flip Challenge
+﻿
+/*// Coin Flip Challenge
 
 Random coin = new Random();
 int flip = coin.Next(0, 11);
@@ -34,3 +35,5 @@ else
 {
     Console.WriteLine("You do not have sufficient privileges.");
 }
+
+*/
