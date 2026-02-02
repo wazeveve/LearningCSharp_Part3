@@ -1,4 +1,5 @@
-﻿Random random = new Random();
+﻿/*
+Random random = new Random();
 int current = random.Next(1, 11);
 
 
@@ -20,7 +21,6 @@ while (current >= 3)
 }
 Console.WriteLine($"Last number: {current}");
 
-*/
 
 // Challenge - Battle Game
 
@@ -65,3 +65,41 @@ do
         Console.WriteLine("Choose a number beetween 5 and 10");
 } while (validChoice == false);
 Console.WriteLine($"Your input: {choosenNumber} was accepted!");
+*/
+
+
+// Challenge - Code 2 - Write code that validates string input
+
+
+string? choosenOption;
+bool validString = false;
+string[] validOptions = { "administrator", "manager", "user" };
+Console.WriteLine("Choose an option:\nAdministrator | Manager | User");
+do
+{
+    choosenOption = Console.ReadLine();
+    choosenOption = choosenOption.Trim();
+    choosenOption = choosenOption.ToLower();
+    foreach (var option in validOptions)
+    {
+        if (option != choosenOption)
+        {
+            
+            continue;
+        }
+        
+
+        if(option == choosenOption)
+        {
+            validString = true;
+            continue;
+        }
+    }
+    if (validString == false)
+        Console.WriteLine("Invalid Input! Try Again!");
+
+
+
+} while (validString == false);
+
+Console.WriteLine($"Your input was accepted! Welcome {choosenOption}");
