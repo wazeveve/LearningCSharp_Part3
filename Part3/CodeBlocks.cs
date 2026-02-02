@@ -1,4 +1,5 @@
-﻿bool flag = true;
+﻿/*
+bool flag = true;
 int value = 0;
 if (flag)
 {
@@ -25,3 +26,5 @@ if (found)
     Console.WriteLine("Set contains 42");
 
 Console.WriteLine($"Total: {total}");
+
+*/
