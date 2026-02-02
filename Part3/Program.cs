@@ -11,23 +11,26 @@ Console.WriteLine(flip % 2 == 0 ? "Heads!" : "Tails!");
 string permission = "Admin";
 int level = 255;
 
-if (permission.Contains("Admin") && level > 55)
+if (permission.Contains("Admin"))
 {
-    Console.WriteLine("Welcome, Super Admin user.");
-}
-else if (permission.Contains("Admin") && level <= 55)
-{
-    Console.WriteLine("Welcome, Admin user.");
-}
-else if (permission.Contains("Manager") && level >= 20)
-{
-    Console.WriteLine("Contact an Admin for access.");
-}
-else if (permission.Contains("Manager") && level < 20)
-{
-    Console.WriteLine("You do not have sufficiente privileges.");
+    if(level > 55)
+    {
+        Console.WriteLine("Welcome, Super Admin user.");
+    }else
+    {
+        Console.WriteLine("Welcome, Admin user.");
+    }
+} else if (permission.Contains("Manager"){
+    if(level >= 20)
+    {
+        Console.WriteLine("Contact an Admin for access.");
+    }
+    else
+    {
+        Console.WriteLine("You do not have sufficient privileges.");
+    }
 }
 else
 {
-    Console.WriteLine("You do not have sufficiente privileges.");
+    Console.WriteLine("You do not have sufficient privileges.");
 }
