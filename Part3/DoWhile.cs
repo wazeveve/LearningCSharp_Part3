@@ -65,7 +65,7 @@ do
         Console.WriteLine("Choose a number beetween 5 and 10");
 } while (validChoice == false);
 Console.WriteLine($"Your input: {choosenNumber} was accepted!");
-*/
+
 
 
 // Challenge - Code 2 - Write code that validates string input
